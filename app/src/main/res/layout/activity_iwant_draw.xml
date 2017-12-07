@@ -1,17 +1,15 @@
 <?xml version="1.0" encoding="utf-8"?>
 <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-
     tools:context="${relativePackage}.${activityClass}">
 
-
-    <travkina.vv.forsecondm.MyDrawFish
-        android:id="@+id/myDraw1"
+    <travkina.vv.forsecondm.MyDrawIWantDraw
+        android:id="@+id/MyDrawIWantDraw"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        android:background="@drawable/background"
         />
 
 </RelativeLayout>

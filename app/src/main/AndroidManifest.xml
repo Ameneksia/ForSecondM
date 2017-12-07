@@ -16,10 +16,9 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
-        <activity android:name=".Images">
-
-        </activity>
-        <activity android:name=".MainActivityFish"></activity>
+        <activity android:name=".Images"></activity>
+        <activity android:name=".MainActivityFish" />
+        <activity android:name=".IWantDraw"></activity>
     </application>
 
 </manifest>

@@ -13,10 +13,10 @@ import static android.R.attr.numStars;
  * Created by Анастасия on 04.12.2017.
  */
 
-public class MyDraw extends View {
+public class MyDrawFish extends View {
 
 
-    public MyDraw(Context context, AttributeSet attrs) {
+    public MyDrawFish(Context context, AttributeSet attrs) {
         super(context, attrs);
 
         this.fish1  = new Fish(BitmapFactory.decodeResource(getResources(), R.drawable.fish1));
