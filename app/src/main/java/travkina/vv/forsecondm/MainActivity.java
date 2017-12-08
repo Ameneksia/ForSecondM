@@ -1,6 +1,7 @@
 package travkina.vv.forsecondm;
 
 import android.content.Intent;
+import android.media.Image;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.view.View;
@@ -14,10 +15,13 @@ public class MainActivity extends AppCompatActivity {
         setContentView(R.layout.start_activity_main);
         Listaner1 listaner1 = new Listaner1();
         Listaner2 listaner2 = new Listaner2();
+      //  Listaner3 listaner3 = new Listaner3();
         Button button1 = (Button) findViewById(R.id.button1);
         Button button2 = (Button) findViewById(R.id.button2);
+       // Button button31 = (Button) findViewById(R.id.button31);
         button1.setOnClickListener(listaner1);
         button2.setOnClickListener(listaner2);
+       // button2.setOnClickListener(listaner3);
     }
 
 
@@ -40,6 +44,16 @@ public class MainActivity extends AppCompatActivity {
         }
     }
 
+    class Listaner3 implements View.OnClickListener {
+
+
+        @Override
+        public void onClick(View v) {
+            OpenImages(v);
+
+        }
+    }
+
 
 
 public void OpenFish (View view){
@@ -52,6 +66,10 @@ public void OpenFish (View view){
         startActivity(intent);
 
     }
+    public void OpenImages(View view){
+        Intent intent = new Intent(this, Images.class);
+        startActivity(intent);
 
+    }
 
 }

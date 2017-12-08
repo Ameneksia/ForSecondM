@@ -5,5 +5,5 @@ package travkina.vv.forsecondm.figure;
  */
 
 public abstract class Figure {
-    float x,y;
+    protected float x,y;
 }

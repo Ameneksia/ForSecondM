@@ -11,9 +11,49 @@ import android.graphics.Paint;
 
 public class Fish {
 
-    float x, y, vx, vy;
-    boolean n;
+   private float x, y, vx, vy;
+   private boolean n;
     Bitmap pic;
+
+    public boolean isN() {
+        return n;
+    }
+
+    public void setN(boolean n) {
+        this.n = n;
+    }
+
+    public float getX() {
+        return x;
+    }
+
+    public void setX(float x) {
+        this.x = x;
+    }
+
+    public float getY() {
+        return y;
+    }
+
+    public void setY(float y) {
+        this.y = y;
+    }
+
+    public float getVx() {
+        return vx;
+    }
+
+    public void setVx(float vx) {
+        this.vx = vx;
+    }
+
+    public float getVy() {
+        return vy;
+    }
+
+    public void setVy(float vy) {
+        this.vy = vy;
+    }
 
     Fish(Bitmap pic){
 
@@ -47,8 +87,8 @@ if(x<=800 && x>1 && n==true) {
     void draw(Canvas canvas){
         matrix.setScale(0.2f, 0.2f);
         //Study mathematics, dear young programmer :)
-      //  matrix.postTranslate(-pic.getWidth()/10,-pic.getHeight()/10);
-      //  matrix.postRotate((float)Math.toDegrees(Math.atan2(vy, vx)) + 45);
+        matrix.postTranslate(-pic.getWidth()/10,-pic.getHeight()/10);
+        //matrix.postRotate((float)Math.toDegrees(Math.atan2(vy, vx)) + 45);
         matrix.postTranslate(x, y);
         paint.setAlpha(255);
         canvas.drawBitmap(pic, matrix, paint);

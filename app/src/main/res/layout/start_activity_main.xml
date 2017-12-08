@@ -14,5 +14,11 @@
         android:id="@+id/button2"
         android:layout_width="175dp"
         android:layout_height="wrap_content"
-        android:text="Хочу рисовать!" />
+        android:text="@string/want_draw" />
+
+    <Button
+        android:id="@+id/button31"
+        android:layout_width="175dp"
+        android:layout_height="wrap_content"
+        android:text="@string/dont_know" />
 </LinearLayout>
